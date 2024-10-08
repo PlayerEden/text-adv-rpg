@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    flex-direction: column;
 }
 
 #game-container {
@@ -16,6 +17,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 button {
@@ -33,4 +36,26 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+/* Inventory and Action Log Styles */
+#inventory {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.log-container {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.log-container p {
+    margin: 5px 0;
+    font-size: 14px;
 }
