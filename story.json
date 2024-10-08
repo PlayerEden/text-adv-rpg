@@ -1,0 +1,47 @@
+{
+    "start": {
+        "text": "You are standing at a crossroad. Do you want to go left or right?",
+        "choices": {
+            "Go Left": "leftPath",
+            "Go Right": "rightPath"
+        }
+    },
+    "leftPath": {
+        "text": "You encounter a wild wolf! What do you do?",
+        "choices": {
+            "Fight the wolf": "fight",
+            "Run away": "runAway"
+        }
+    },
+    "rightPath": {
+        "text": "You find a treasure chest! What do you do?",
+        "choices": {
+            "Open the chest": "treasure",
+            "Leave it alone": "leave"
+        }
+    },
+    "fight": {
+        "text": "You bravely fought the wolf and won!",
+        "choices": {
+            "Restart": "start"
+        }
+    },
+    "runAway": {
+        "text": "You ran away safely.",
+        "choices": {
+            "Restart": "start"
+        }
+    },
+    "treasure": {
+        "text": "You found a rare gem! Congratulations!",
+        "choices": {
+            "Restart": "start"
+        }
+    },
+    "leave": {
+        "text": "You walked away from the treasure chest.",
+        "choices": {
+            "Restart": "start"
+        }
+    }
+}
